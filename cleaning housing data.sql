@@ -94,14 +94,14 @@ SET soldasvacant = CASE WHEN soldasvacant = 'Y' THEN 'Yes'
 	 ELSE soldasvacant
 	 END;
 	 
--- Delete Unused Columns 
+--Delete Unused Columns 
 
 SELECT *
 FROM nashvillehousing
 
 ALTER TABLE nashvillehousing
 DROP COLUMN owneraddress, 
-DROP COLUMN	taxdistrict, 
-DROP COLUMN	propertyaddress
+DROP COLUMN taxdistrict, 
+DROP COLUMN propertyaddress
 
 	 
